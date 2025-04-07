@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blackwing Academy</title>
+  <style>
+    /* RESET & BASE STYLING */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #ffffff;
+    }
+
+    body {
+      /* Subtle radial gradient background (dark mode) */
+      background: radial-gradient(circle at top, #1a1e2a, #0b0d14 60%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+    }
+
+    /* MAIN CONTAINER */
+    main {
+      flex: 1;
+      width: 100%;
+      max-width: 1200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 2rem;
+      box-sizing: border-box;
+    }
+
+    /* HEADER / LOGO / TAGLINE */
+    .logo {
+      width: 120px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+    }
+    p.tagline {
+      font-size: 1.2rem;
+      color: #c0c0c0;
+      margin-bottom: 2rem;
+    }
+
+    /* FEATURES SECTION */
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    .feature {
+      max-width: 200px;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 1rem;
+      border-radius: 8px;
+      transition: transform 0.2s;
+    }
+    .feature:hover {
+      transform: translateY(-3px);
+    }
+    .feature-icon {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .feature-title {
+      font-weight: bold;
+      margin-bottom: 0.25rem;
+    }
+
+    /* ABOUT SECTION */
+    .about-section {
+      max-width: 800px;
+      margin-bottom: 3rem;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 2rem;
+      border-radius: 8px;
+    }
+    .about-section h2 {
+      margin-bottom: 1rem;
+    }
+    .about-section p {
+      line-height: 1.6;
+    }
+
+    /* BUTTON (CTA) */
+    .btn {
+      background-color: #2043dc;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+    .btn:hover {
+      background-color: #1a36b1;
+      transform: translateY(-2px);
+    }
+
+    /* FOOTER */
+    footer {
+      margin-top: 2rem;
+      padding: 1rem 0;
+    }
+    footer a {
+      color: #579dff;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-weight: 500;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* OUTLINED ICON (INSTAGRAM) */
+    .icon-outlined {
+      border: 2px solid #fff;
+      border-radius: 50%;
+      padding: 0.25rem;
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+    }
+    .icon-outlined svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* RESPONSIVE ADJUSTMENTS */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .feature {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- LOGO (no outline) -->
+    <img src="BWA_Logo_Transp.png" alt="Blackwing Academy Logo" class="logo" />
+
+    <h1>BLACKWING ACADEMY</h1>
+    <p class="tagline">Smart birds. Sharp beaks. Shiny goals.</p>
+
+    <!-- FEATURES -->
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon">🎓</div>
+        <div class="feature-title">IT Certification Prep</div>
+        <div>Build confidence with free, high-quality exam guides and practice materials.</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">☁️</div>
+        <div class="feature-title">Tech Education</div>
+        <div>Easy-to-follow tutorials on Cloud, Linux, Cybersecurity, and more.</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🛡️</div>
+        <div class="feature-title">Free Resources</div>
+        <div>YouTube videos, flashcards, and study tips—totally free, forever.</div>
+      </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <div class="about-section">
+      <h2>About Blackwing Academy</h2>
+      <p>
+        Welcome to the nest of curious minds and playful mischief. Our mission is to bring
+        top-notch IT education to <strong>anyone</strong> eager to learn—no gatekeeping,
+        no fluff, and plenty of fun. If you’re looking for a place to spread your wings
+        and chase shiny new skills, you’ve found it.
+      </p>
+    </div>
+
+    <!-- CALL TO ACTION BUTTON -->
+    <a class="btn" href="https://www.youtube.com/@BlackwingAcademy1" target="_blank">
+      GET STARTED
+    </a>
+  </main>
+
+  <footer>
+    Follow us on
+    <a href="https://www.instagram.com/blackwingacademy/" target="_blank">
+      <!-- White-outlined Instagram icon (fixed, single line path) -->
+      <span class="icon-outlined">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.75 2C4.574 2 2 4.574 2 7.75V16.25C2 19.426 4.574 22 7.75 22H16.25C19.426 22 22 19.426 22 16.25V7.75C22 4.574 19.426 2 16.25 2H7.75ZM16.25 0C20.798 0 24 3.202 24 7.75V16.25C24 20.798 20.798 24 16.25 24H7.75C3.202 24 0 20.798 0 16.25V7.75C0 3.202 3.202 0 7.75 0H16.25ZM17.625 5.5C16.812 5.5 16.158 6.155 16.158 6.969C16.158 7.781 16.812 8.438 17.625 8.438C18.438 8.438 19.094 7.781 19.094 6.969C19.094 6.155 18.438 5.5 17.625 5.5ZM12 7.5C9.516 7.5 7.5 9.516 7.5 12C7.5 14.484 9.516 16.5 12 16.5C14.484 16.5 16.5 14.484 16.5 12C16.5 9.516 14.484 7.5 12 7.5ZM5.5 12C5.5 8.962 7.962 6.5 12 6.5C16.038 6.5 18.5 8.962 18.5 12C18.5 15.038 16.038 17.5 12 17.5C7.962 17.5 5.5 15.038 5.5 12Z" fill="currentColor"></path>
+        </svg>
+      </span>
+      Instagram
+    </a>
+  </footer>
+</body>
+</html>
