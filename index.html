@@ -1,216 +1,160 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <title>Blackwing Academy</title>
-  <style>
-    /* RESET & BASE STYLING */
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #ffffff;
-    }
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Blackwing Academy</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload homepage">
+		<div id="page-wrapper">
 
-    body {
-      /* Subtle radial gradient background (dark mode) */
-      background: radial-gradient(circle at top, #1a1e2a, #0b0d14 60%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      min-height: 100vh;
-    }
+			<!-- Header -->
+				<div id="header-wrapper">
+					<header id="header" class="container">
 
-    /* MAIN CONTAINER */
-    main {
-      flex: 1;
-      width: 100%;
-      max-width: 1200px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      padding: 2rem;
-      box-sizing: border-box;
-    }
+						<!-- Logo -->
+						<div id="logo">
+							<a href="index.html">
+							  <img src="assets/images/BWA_Logo_Transp.png" alt="Blackwing Academy Logo" style="max-height: 80px;" />
+							</a>
+						</div>
 
-    /* HEADER / LOGO / TAGLINE */
-    .logo {
-      width: 120px;
-      height: auto;
-      margin-bottom: 1rem;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin: 0.5rem 0;
-    }
-    p.tagline {
-      font-size: 1.2rem;
-      color: #c0c0c0;
-      margin-bottom: 2rem;
-    }
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li class="current"><a href="index.html">Home</a></li>
+									<li>
+										<!--<a href="aboutUs.html">About Us</a>-->
+										<!--<ul> 
+											<li><a href="#">Lorem ipsum dolor</a></li>
+											<li><a href="#">Magna phasellus</a></li>
+											<li>
+												<a href="#">Phasellus consequat</a>
+												<ul>
+													<li><a href="#">Lorem ipsum dolor</a></li>
+													<li><a href="#">Phasellus consequat</a></li>
+													<li><a href="#">Magna phasellus</a></li>
+													<li><a href="#">Etiam dolore nisl</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Veroeros feugiat</a></li> 
+										</ul> -->
+									</li>
+									<!-- <li><a href="links.html">Links</a></li> -->
+								</ul>
+							</nav>
 
-    /* FEATURES SECTION */
-    .features {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-      margin-bottom: 3rem;
-    }
-    .feature {
-      max-width: 200px;
-      background-color: rgba(255, 255, 255, 0.05);
-      padding: 1rem;
-      border-radius: 8px;
-      transition: transform 0.2s;
-    }
-    .feature:hover {
-      transform: translateY(-3px);
-    }
-    .feature-icon {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-    .feature-title {
-      font-weight: bold;
-      margin-bottom: 0.25rem;
-    }
+					</header>
+				</div>
 
-    /* ABOUT SECTION */
-    .about-section {
-      max-width: 800px;
-      margin-bottom: 3rem;
-      background-color: rgba(255, 255, 255, 0.05);
-      padding: 2rem;
-      border-radius: 8px;
-    }
-    .about-section h2 {
-      margin-bottom: 1rem;
-    }
-    .about-section p {
-      line-height: 1.6;
-    }
+			<!-- Banner -->
+				<div id="banner-wrapper">
+					<div id="banner" class="box container">
+						<div class="row" style="align-items: center; display: flex; flex-wrap: wrap;">
+							<div class="col-7 col-12-medium">
+								<h2>This is the home of Blackwing Academy!</h2>
+								<p>We are a free IT and technology academy for online learners</p>
+							</div>
+							<div class="col-5 col-12-medium" >
+								<ul>
+									<li><a href="https://www.youtube.com/@BlackwingAcademy1" class="button large icon solid fa-arrow-circle-right">Visit the Channel</a></li>
+									<!-- <li><a href="aboutUs.html" class="button alt large icon solid fa-question-circle">Who are we?</a></li> -->
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
 
-    /* BUTTON (CTA) */
-    .btn {
-      background-color: #2043dc;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border: none;
-      border-radius: 6px;
-      font-size: 1rem;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background-color 0.3s, transform 0.2s;
-    }
-    .btn:hover {
-      background-color: #1a36b1;
-      transform: translateY(-2px);
-    }
+			<!-- Features -->
+				<div id="features-wrapper">
+					<div class="container">
+						<!-- insert the features section text file here -->
+						</div>
+					</div>
+				</div>
 
-    /* FOOTER */
-    footer {
-      margin-top: 2rem;
-      padding: 1rem 0;
-    }
-    footer a {
-      color: #579dff;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      font-weight: 500;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
+			<!-- Main -->
+				<div id="main-wrapper">
+					<div class="container">
+						<div class="row gtr-200">
+							<!--<div class="col-4 col-12-medium">
 
-    /* OUTLINED ICON (INSTAGRAM) */
-    .icon-outlined {
-      border: 2px solid #fff;
-      border-radius: 50%;
-      padding: 0.25rem;
-      display: inline-block;
-      width: 24px;
-      height: 24px;
-    }
-    .icon-outlined svg {
-      display: block;
-      width: 100%;
-      height: 100%;
-    }
+								<!-- Sidebar -->
+							<!--		<div id="sidebar">
+										<section class="widget thumbnails">
+											<h3>Interesting stuff</h3>
+											<div class="grid">
+												<div class="row gtr-50">
+													<div class="col-6"><a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a></div>
+													<div class="col-6"><a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a></div>
+													<div class="col-6"><a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a></div>
+													<div class="col-6"><a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a></div>
+												</div>
+											</div>
+											<a href="#" class="button icon fa-file-alt">More</a>
+										</section>
+									</div>
 
-    /* RESPONSIVE ADJUSTMENTS */
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2rem;
-      }
-      .feature {
-        max-width: 100%;
-      }
-    }
-  </style>
-</head>
-<body>
-  <main>
-    <!-- LOGO (no outline) -->
-    <img src="BWA_Logo_Transp.png" alt="Blackwing Academy Logo" class="logo" />
+							</div> -->
+							<div class="col-8 col-12-medium imp-medium" style="margin: 0 auto; float: none;">
 
-    <h1>BLACKWING ACADEMY</h1>
-    <p class="tagline">Smart birds. Sharp beaks. Shiny goals.</p>
+								<!-- Content -->
+									<div id="content">
+										<section class="last">
+											<h2>So what's this all about?</h2>
+											<p><strong>Welcome to Blackwing Academy — your go-to source for free, accessible tech education.</strong> We’re an online learning hub powered by engaging video tutorials, designed to help you build real-world IT skills without the price tag. Whether you're exploring information technology for the first time, preparing for certifications like CompTIA A+, or expanding your knowledge as a hobbyist, our content is built to meet you where you are.
+											<p><strong>At Blackwing Academy, we believe learning IT should be practical, encouraging, and <i>maybe</i> even a little fun.</strong> Our mission is to break down complex IT topics into easy-to-understand lessons that anyone can follow. Whether you're pursuing a tech career or just curious about computers, networks, or cybersecurity, we're here to support your journey — one skill at a time.</p>
+											<!-- <a href="#" class="button icon solid fa-arrow-circle-right">Continue Reading</a> -->
+										</section>
+									</div>
 
-    <!-- FEATURES -->
-    <div class="features">
-      <div class="feature">
-        <div class="feature-icon">🎓</div>
-        <div class="feature-title">IT Certification Prep</div>
-        <div>Build confidence with free, high-quality exam guides and practice materials.</div>
-      </div>
-      <div class="feature">
-        <div class="feature-icon">☁️</div>
-        <div class="feature-title">Tech Education</div>
-        <div>Easy-to-follow tutorials on Cloud, Linux, Cybersecurity, and more.</div>
-      </div>
-      <div class="feature">
-        <div class="feature-icon">🛡️</div>
-        <div class="feature-title">Free Resources</div>
-        <div>YouTube videos, flashcards, and study tips—totally free, forever.</div>
-      </div>
-    </div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-    <!-- ABOUT SECTION -->
-    <div class="about-section">
-      <h2>About Blackwing Academy</h2>
-      <p>
-        Welcome to the nest of curious minds and playful mischief. Our mission is to bring
-        top-notch IT education to <strong>anyone</strong> eager to learn—no gatekeeping,
-        no fluff, and plenty of fun. If you’re looking for a place to spread your wings
-        and chase shiny new skills, you’ve found it.
-      </p>
-    </div>
+			<!-- Footer -->
+				<div id="footer-wrapper">
+					<footer id="footer" class="container">
+						<div class="row">
+							<div class="col-12">
+							  <!-- Contact -->
+							  <section class="widget contact last" style="text-align: center;">
+								<h3>Contact Us</h3>
+								<ul style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+								  <li><a href="https://www.instagram.com/blackwingacademy/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+								  <li><a href="https://www.youtube.com/@BlackwingAcademy1" class="icon brands fa-youtube"><span class="label">Dribbble</span></a></li>
+								</ul>
+								<!-- <p>1234 Fictional Road<br />
+								Nashville, TN 00000<br />
+								(800) 555-0000</p>
+								-->
+							  </section>
+							</div>
+						  </div>
+						  <div class="row">
+							<div class="col-12">
+							  <div id="copyright" style="text-align: center;">
+								<ul class="menu">
+								  <li>&copy; Blackwing Academy. All rights reserved.</li>
+								</ul>
+							  </div>
+							</div>
+						  </div>
+					</footer>
+				</div>
 
-    <!-- CALL TO ACTION BUTTON -->
-    <a class="btn" href="https://www.youtube.com/@BlackwingAcademy1" target="_blank">
-      GET STARTED
-    </a>
-  </main>
+			</div>
 
-  <footer>
-    Follow us on
-    <a href="https://www.instagram.com/blackwingacademy/" target="_blank">
-      <!-- White-outlined Instagram icon (fixed, single line path) -->
-      <span class="icon-outlined">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.75 2C4.574 2 2 4.574 2 7.75V16.25C2 19.426 4.574 22 7.75 22H16.25C19.426 22 22 19.426 22 16.25V7.75C22 4.574 19.426 2 16.25 2H7.75ZM16.25 0C20.798 0 24 3.202 24 7.75V16.25C24 20.798 20.798 24 16.25 24H7.75C3.202 24 0 20.798 0 16.25V7.75C0 3.202 3.202 0 7.75 0H16.25ZM17.625 5.5C16.812 5.5 16.158 6.155 16.158 6.969C16.158 7.781 16.812 8.438 17.625 8.438C18.438 8.438 19.094 7.781 19.094 6.969C19.094 6.155 18.438 5.5 17.625 5.5ZM12 7.5C9.516 7.5 7.5 9.516 7.5 12C7.5 14.484 9.516 16.5 12 16.5C14.484 16.5 16.5 14.484 16.5 12C16.5 9.516 14.484 7.5 12 7.5ZM5.5 12C5.5 8.962 7.962 6.5 12 6.5C16.038 6.5 18.5 8.962 18.5 12C18.5 15.038 16.038 17.5 12 17.5C7.962 17.5 5.5 15.038 5.5 12Z" fill="currentColor"></path>
-        </svg>
-      </span>
-      Instagram
-    </a>
-  </footer>
-</body>
+		<!-- Scripts -->
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
